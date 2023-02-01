@@ -11,7 +11,9 @@ Sample project for setting up a cross assembler and running ARM binaries on x86_
 
 `sudo apt update -y && sudo apt upgrade -y`
 
-`sudo apt install qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg build-essential`
+`sudo apt install qemu-user qemu-user-static`
+
+`sudo apt install gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg build-essential`
 
 `sudo apt install gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf binutils-arm-linux-gnueabihf-dbg`
 
