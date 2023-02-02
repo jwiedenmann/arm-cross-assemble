@@ -36,3 +36,29 @@ Sample project for setting up a cross assembler and running ARM binaries on x86_
 ### 32bit
 
 `qemu-arm "asm32"`
+
+# Remote Debugging
+
+## Setup
+
+1. Install gdb-multiarch
+2. Install [GEF](https://github.com/hugsy/gef)
+
+## Run
+
+1. Assemble ARM binaries
+2. Open two terminal windows and navigate to the binaries
+3. Execute Qemu with debug flags
+
+    `qemu-arm -g 1234 asm32`
+
+4. Connect to Qemu via GDB
+
+    `gdb-multiarch`
+
+    `gef-remote --qemu-user --qemu-binary asm32 localhost 1234`
+
+## Commands
+
+- nexti - Executes a line
+- stepi - Steps in a function
